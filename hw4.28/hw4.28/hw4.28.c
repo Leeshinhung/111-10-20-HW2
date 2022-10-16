@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main(){
 	int num,h;
 	float m;
 	printf("manager press 1,hourly workers press 2,\ncommission workers press 3,pieceworkers press 4:");
@@ -13,7 +12,6 @@ int main()
 		printf("How much is your weekly salary:");
 		scanf("%f", &m);
 		printf("weekly salary:%f",m);
-
 		break;
 	case 2:
 		printf("How long do you work in the week:");
@@ -39,7 +37,7 @@ int main()
 		printf("How much money for each of the items to produce:");
 		scanf("%f", &m);
 		printf("How many products are made?");
-		scanf("%f", &h);
+		scanf("%d", &h);
 		m = h * m;
 		printf("weekly salary:%f", m);
 		break;
